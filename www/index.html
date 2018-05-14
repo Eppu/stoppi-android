@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Stoppi - Bus Tracker for Students in Tampere </title>
+	<link rel="stylesheet" href="css/style.css" media="screen" />
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+	<div id="logoContainer">
+		<img src="images/tamk.png" id="logo" />
+	</div>
+
+	<div class="menuBtnContainer">
+		<button id="geolocationButton" class="circleButton" title="Find your location"><img id="locationImage" class="buttonIcon" src="images/locate-mark.svg" /></button>
+		<button id="myBtn" class="circleButton" title="Bus lines"><img id="busImage" class="buttonIcon" src="images/bus-logo.svg"/></button>
+	</div>
+
+	<!-- The modal menu -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal menu content -->
+		<div id="busselection">
+			<h1 id="menuTitle">Choose your routes.</h1>
+			<div class="button-container">
+				<button class="line-btn" value="1">1</button>
+				<button class="line-btn" value="2">2</button>
+				<button class="line-btn" value="3A">3A</button>
+				<button class="line-btn" value="3B">3B</button>
+				<button class="line-btn" value="4">4</button>
+				<button class="line-btn" value="4Y">4Y</button>
+				<button class="line-btn" value="5">5</button>
+				<button class="line-btn" value="6">6</button>
+				<button class="line-btn" value="8">8</button>
+				<button class="line-btn" value="9A">9A</button>
+				<button class="line-btn" value="9B">9B</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="10">10</button>
+				<button class="line-btn" value="11">11</button>
+				<button class="line-btn" value="12">12</button>
+				<button class="line-btn" value="14">14</button>
+				<button class="line-btn" value="15">15</button>
+				<button class="line-btn" value="17">17</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="20">20</button>
+				<button class="line-btn" value="20R">20R</button>
+				<button class="line-btn" value="21">21</button>
+				<button class="line-btn" value="24">24</button>
+				<button class="line-btn" value="25">25</button>
+				<button class="line-btn" value="26">26</button>
+				<button class="line-btn" value="28A">28A</button>
+				<button class="line-btn" value="28B">28B</button>
+				<button class="line-btn" value="28C">28C</button>
+				<button class="line-btn" value="28Y">28Y</button>
+				<button class="line-btn" value="29">29</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="31">31</button>
+				<button class="line-btn" value="32">32</button>
+				<button class="line-btn" value="33">33</button>
+				<button class="line-btn" value="33Y">33Y</button>
+				<button class="line-btn" value="34">34</button>
+				<button class="line-btn" value="35">35</button>
+				<button class="line-btn" value="37">37</button>
+				<button class="line-btn" value="38">38</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="40">40</button>
+				<button class="line-btn" value="45">45</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="50A">50A</button>
+				<button class="line-btn" value="50B">50B</button>
+				<button class="line-btn" value="50C">50C</button>
+				<button class="line-btn" value="55">55</button>
+				<button class="line-btn" value="55K">55K</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="65N">65N</button>
+				<button class="line-btn" value="65X">65X</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="70">70</button>
+				<button class="line-btn" value="71">71</button>
+				<button class="line-btn" value="71K">71K</button>
+				<button class="line-btn" value="71SK">71SK</button>
+				<button class="line-btn" value="72">72</button>
+				<button class="line-btn" value="73">73</button>
+				<button class="line-btn" value="73K">73K</button>
+				<button class="line-btn" value="74">74</button>
+				<button class="line-btn" value="79">79</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="80">80</button>
+				<button class="line-btn" value="80Y">80Y</button>
+				<button class="line-btn" value="81">81</button>
+				<button class="line-btn" value="83">83</button>
+				<button class="line-btn" value="84">84</button>
+				<button class="line-btn" value="85">85</button>
+				<button class="line-btn" value="85V">85V</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="90">90</button>
+			</div>
+			<div class="button-container">
+				<button class="line-btn" value="137">137</button>
+			</div>
+
+		</div>
+		<div class="modal-menu-footer">
+			<button id="modalCloseBtn" class="circleButton"><img id="okImage" class="buttonIcon" src="images/check-mark.svg"/></button>
+			<button id="mediapolisButton" class="circleButton" title="Lines to Mediapolis (Stop Mediapolis)"><img id="mediapolisImage" class="buttonIcon" src="images/mediapolis.png"/ /></button>
+			<button id="mainCampusButton" class="circleButton" title="Lines to TAMK Main Campus (Stop TAMK)"><img id="tamkImage" class="buttonIcon" src="images/tamk.png"/ /></button>
+			<button id="universityButton" class="circleButton" title="Lines to Tampere University (Stops Yliopisto A, B, C, D)"><img id="universityImage" class="buttonIcon" src="images/university.png"/ /></button>
+			<button id="ttyButton" class="circleButton" title="Lines to Tampere Technical University (Stop TTY)"><img id="ttyImage" class="buttonIcon" src="images/tty.png"/ /></button>
+		</div>
+	</div>
+
+
+	<div id="mapholder"></div>
+
+	<!-- Use this if deploying live with the static data -->
+	<!-- <script src="testdata.json" type="text/javascript"></script> -->
+
+	<!-- Use this Maps API source for local deployment -->
+	<script src="https://maps.google.com/maps/api/js"></script>
+
+	<!-- Use this Maps API source for server deployment -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNs18gBFrjmEOt45QIYbcYmcx5dSAlomc" type="text/javascript"></script> -->
+
+	<script type="text/javascript" src="js/busTracker.js"></script>
+</body>
+
+</html>

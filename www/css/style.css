@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* This hides the Android WebView system highlighting. */
+* {
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+   -webkit-tap-highlight-color: transparent; /* For some Androids */
+   outline: 0;
+   /* Prevents the user from selecting text elements */
+    -webkit-user-select: none;
+
+    -webkit-appearance: none;
+    /* Prevents the default callout when holding a link */
+     -webkit-touch-callout: none
+
+     /* Sets device default scrolling */
+      -webkit-overflow-scrolling: touch;
+ }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+#logoContainer {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+
+#logo {
+  height: 60%;
+}
+
+.modal {
+  /* Hidden by default */
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#busselection {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  padding: 10px 10px 140px 14px;
+}
+
+#mapholder {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.menuBtnContainer {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+#geolocationButton {
+  position: absolute;
+  bottom: 60px;
+
+}
+
+#menuTitle {
+  margin-left: 10px;
+  color: #E71784;
+  font-weight: bold;
+}
+
+.button-container {
+  margin-left: 10px;
+
+}
+
+.line-btn {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 60px;
+  height: 60px;
+  background: #777;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+   -webkit-appearance: none;
+
+}
+
+.line-btn.selected {
+  background: #E71784;
+
+}
+
+.line-btn:hover {
+  background: #aaaaaa;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.01);
+}
+
+.line-btn:active {
+  transition: all 0.05s ease-in-out;
+  transform: scale(0.9);
+
+}
+
+.line-btn.selected:hover {
+  background: #f45fad;
+
+}
+
+.circleButton {
+  background-color: #777;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+}
+
+.circleButton:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #aaaaaa;
+}
+
+.circleButton:active {
+  transition: all 0.05s ease-in-out;
+  transform: scale(0.9);
+
+}
+
+#modalCloseBtn {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  z-index: 1;
+
+}
+
+#mediapolisButton {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+
+}
+
+#mainCampusButton {
+  position: absolute;
+  right: 70px;
+  bottom: 30px;
+
+}
+
+#universityButton {
+  position: absolute;
+  right: 130px;
+  bottom: 30px;
+
+}
+
+#ttyButton {
+  position: absolute;
+  right: 190px;
+  bottom: 30px;
+
+}
+
+#mediapolisImage {
+  height: 100%;
+}
+
+.buttonIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 55%;
+}
+
+.modal-menu-footer {
+  background: #f9f9f9;
+  position: fixed;
+  z-index: 3000;
+  height: 121px;
+  border-top: 1px solid #eee;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .line-btn {
+    width: 54px;
+    height: 54px;
+  }
+  #logo {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .line-btn {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .line-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .line-btn {
+    width: 38px;
+    height: 38px;
+  }
+  #logo {
+    height: 40%;
+  }
+  #mediapolisButton {
+    right: 5px;
+  }
+  #mainCampusButton {
+    right: 60px;
+  }
+  #universityButton {
+    right: 115px;
+  }
+  #ttyButton {
+    right: 170px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #mediapolisButton {
+    right: 2px;
+  }
+  #mainCampusButton {
+    right: 55px;
+  }
+  #universityButton {
+    right: 108px;
+  }
+  #ttyButton {
+    right: 161px;
+  }
+}
