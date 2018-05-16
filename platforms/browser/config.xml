@@ -6,14 +6,15 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>Hello World</name>
+    <name>Stoppi</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Stoppi is a real-time bus tracker for students in Tampere.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
+    <author email="edwardtehgreat@gmail.com" href="https://eetueskelinen.com">
         PhoneGap Team
     </author>
     <content src="index.html" />
+    <splash src="splash.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
