@@ -45,8 +45,12 @@
         <splash qualifier="land-xxxhdpi" src="www/images/android/splash.png" />
     </platform>
     <platform name="android">
-    <preference name="SplashScreen" value="splash" />
+      <preference name="SplashScreen" value="splash" />
     </platform>
+    <splash src="www/images/android/splash.png" platform="android" qualifier="ldpi" />
+    <splash src="www/images/android/splash.png" platform="android" qualifier="mdpi" />
+    <splash src="www/images/android/splash.png" platform="android" qualifier="hdpi" />
+    <splash src="www/images/android/splash.png" platform="android" qualifier="xhdpi" />
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
