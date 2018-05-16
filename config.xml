@@ -37,7 +37,12 @@
         <icon density="xhdpi" src="www/images/android/xhdpi.png" />
         <icon density="xxhdpi" src="www/images/android/xxhdpi.png" />
         <icon density="xxxhdpi" src="www/images/android/xxxhdpi.png" />
-        <splash src="splash.png" />
+        <splash qualifier="land-ldpi" src="www/images/android/splash.png" />
+        <splash qualifier="land-mdpi" src="www/images/android/splash.png" />
+        <splash qualifier="land-hldpi" src="www/images/android/splash.png" />
+        <splash qualifier="land-xhdpi" src="www/images/android/splash.png" />
+        <splash qualifier="land-xxhdpi" src="www/images/android/splash.png" />
+        <splash qualifier="land-xxxhdpi" src="www/images/android/splash.png" />
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
