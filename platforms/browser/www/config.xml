@@ -11,7 +11,7 @@
         Stoppi is a real-time bus tracker for students in Tampere.
     </description>
     <author email="edwardtehgreat@gmail.com" href="https://eetueskelinen.com">
-        PhoneGap Team
+        Eetu Eskelinen
     </author>
     <content src="index.html" />
     <splash src="splash.png" />
