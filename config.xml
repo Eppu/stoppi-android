@@ -44,6 +44,9 @@
         <splash qualifier="land-xxhdpi" src="www/images/android/splash.png" />
         <splash qualifier="land-xxxhdpi" src="www/images/android/splash.png" />
     </platform>
+    <platform name="android">
+    <preference name="SplashScreen" value="splash" />
+    </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
