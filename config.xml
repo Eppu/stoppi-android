@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.eetueskelinen.stoppi" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://eetueskelinen.com">
+<widget id="com.eetueskelinen.stoppi" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://eetueskelinen.com"
+  xmlns:android = "http://schemas.android.com/apk/res/android">
     <name>Stoppi</name>
     <description>
         Stoppi is a real-time bus tracker for students in Tampere.
@@ -9,6 +10,9 @@
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none"/>
+    <config-file platform="android" parent="/manifest" mode="merge">
+    <application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>
+    </config-file>
 
     <!-- to enable individual permissions use the following examples -->
     <!-- <feature name="http://api.phonegap.com/1.0/battery"/>
