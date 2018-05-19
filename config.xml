@@ -14,7 +14,7 @@
     <feature name="http://api.phonegap.com/1.0/battery"/>
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
-    
+
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
@@ -37,6 +37,7 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-headercolor" source="npm" spec="~1.0.0" />
     <platform name="android">
         <icon density="ldpi" src="www/images/android/ldpi.png" />
         <icon density="mdpi" src="www/images/android/mdpi.png" />
@@ -49,6 +50,7 @@
       <preference name="SplashScreen" value="screen" />
       <preference name="SplashScreenDelay" value="5000" />
       <preference name="FadeSplashScreenDuration" value="5000"/>
+      <preference name="HeaderColor" value="#f45fad" />
     </platform>
     <splash src="www/images/android/splash.png" platform="android" qualifier="ldpi" />
     <splash src="www/images/android/splash.png" platform="android" qualifier="mdpi" />
