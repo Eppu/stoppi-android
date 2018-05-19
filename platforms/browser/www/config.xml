@@ -14,6 +14,10 @@
         Eetu Eskelinen
     </author>
     <content src="index.html" />
+    <splash platform="android" qualifier="ldpi" src="www/images/android/splash.png" />
+    <splash platform="android" qualifier="mdpi" src="www/images/android/splash.png" />
+    <splash platform="android" qualifier="hdpi" src="www/images/android/splash.png" />
+    <splash platform="android" qualifier="xhdpi" src="www/images/android/splash.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

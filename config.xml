@@ -40,6 +40,7 @@
     </platform>
     <platform name="android">
       <preference name="SplashScreen" value="splash" />
+      <preference name="SplashScreenDelay" value="10000" />
     </platform>
     <splash src="www/images/android/splash.png" platform="android" qualifier="ldpi" />
     <splash src="www/images/android/splash.png" platform="android" qualifier="mdpi" />

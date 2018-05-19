@@ -46,4 +46,12 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+
+    function () {
+document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+function onDeviceReady() {
+setTimeout(function () {
+        navigator.splashscreen.hide();
+    }, 50);
+}
 };
