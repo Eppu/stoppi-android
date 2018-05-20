@@ -46,9 +46,6 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-    window.addEventListener('load', function() {
-    new FastClick(document.body);
-    }, false);
 
     function () {
 document.addEventListener('deviceready', onDeviceReady.bind(this), false);
