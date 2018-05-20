@@ -19,10 +19,13 @@ let modalBtn = document.getElementById("myBtn");
 let geolocBtn = document.getElementById("geolocationButton");
 let modalClBtn = document.getElementById("modalCloseBtn");
 let mapDivElem = document.getElementById("mapholder");
+let errorField = document.getElementById("errorBox");
 let mediapolisBtn = document.getElementById("mediapolisButton");
 let tamkBtn = document.getElementById("mainCampusButton");
 let universityBtn = document.getElementById("universityButton");
 let ttyBtn = document.getElementById("ttyButton");
+let locImg = document.getElementById("locationImage");
+let spinImg = document.getElementById("spinnerImage");
 
 //google maps variables
 let myMap;
@@ -287,6 +290,8 @@ function checkIfSelected(thisElement) {
 
 // get the user's current address based on their position
 function locateUser() {
+  locImg.style.visibility = "hidden";
+  spinImg.style.visibility = "visible";
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
         // center the map to the user position and create a marker on that spot.
@@ -299,8 +304,12 @@ function locateUser() {
           userPositionMarker.setMap(null);
           userPositionMarker.length = 0;
           createUserPositionMarker(pos);
+          locImg.style.visibility = "visible";
+          spinImg.style.visibility = "hidden";
         } else {
           createUserPositionMarker(pos);
+          locImg.style.visibility = "visible";
+          spinImg.style.visibility = "hidden";
         }
       },
       function() {
