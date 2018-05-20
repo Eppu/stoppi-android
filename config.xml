@@ -53,7 +53,7 @@
     <platform name="android">
       <preference name="SplashScreen" value="screen" />
       <preference name="SplashScreenDelay" value="6000" />
-      <preference name="HeaderColor" value="#f45fad" />
+      <preference name="HeaderColor" value="#E71784" />
       <preference name="ShowSplashScreenSpinner" value="false" />
     </platform>
     <splash src="www/images/android/splash.png" platform="android" qualifier="ldpi" />
