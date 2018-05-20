@@ -61,6 +61,11 @@ class BusMarker {
 // END INITIAL DECLARATIONS ----------------------------------------------------
 
 // EVENT LISTENERS -------------------------------------------------------------
+
+window.addEventListener('load', function() {
+new FastClick(document.body);
+}, false);
+
 geolocBtn.addEventListener("click", locateUser);
 
 //on a click of the modalBtn, show the modal menu

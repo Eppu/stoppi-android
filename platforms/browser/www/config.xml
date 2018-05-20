@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.eetueskelinen.stoppi" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://eetueskelinen.com">
+<widget id="com.eetueskelinen.stoppi" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://eetueskelinen.com">
     <feature name="Camera">
         <param name="browser-package" value="Camera" />
     </feature>
@@ -14,6 +14,9 @@
         Eetu Eskelinen
     </author>
     <content src="index.html" />
+    <config-file mode="merge" parent="/manifest" platform="android">
+        <application android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </config-file>
     <splash platform="android" qualifier="ldpi" src="www/images/android/splash.png" />
     <splash platform="android" qualifier="mdpi" src="www/images/android/splash.png" />
     <splash platform="android" qualifier="hdpi" src="www/images/android/splash.png" />
@@ -25,6 +28,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="permissions" value="none" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
 </widget>

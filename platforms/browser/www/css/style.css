@@ -124,11 +124,11 @@ body {
 
 }
 
-.line-btn:hover {
+/* .line-btn:hover {
   background: #aaaaaa;
   transition: all 0.1s ease-in-out;
   transform: scale(1.01);
-}
+} */
 
 .line-btn:active {
   transition: all 0.05s ease-in-out;
@@ -136,10 +136,10 @@ body {
 
 }
 
-.line-btn.selected:hover {
+/* .line-btn.selected:hover {
   background: #f45fad;
 
-}
+} */
 
 .circleButton {
   background-color: #777;
@@ -159,11 +159,11 @@ body {
 
 }
 
-.circleButton:hover {
+/* .circleButton:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   background-color: #aaaaaa;
-}
+} */
 
 .circleButton:active {
   transition: all 0.05s ease-in-out;

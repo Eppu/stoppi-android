@@ -602,6 +602,14 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-headercolor/www/HeaderColor.js",
+        "id": "cordova-plugin-headercolor.HeaderColor",
+        "pluginId": "cordova-plugin-headercolor",
+        "clobbers": [
+            "cordova.plugins.headerColor"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -626,7 +634,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.6",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-plugin-headercolor": "1.0"
 }
 // BOTTOM OF METADATA
 });
